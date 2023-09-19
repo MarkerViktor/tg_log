@@ -15,5 +15,9 @@ echo 'hello world' | tg_log.sh --tag 'hello_world' --filter 'hello'
 
 ## Пример cron
 ```bash
+TG_LOG_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+TG_LOG_RECIPIENTS_IDS=432141
 * * * * * python3 ~/script.py | ~/tg_log.sh --tag 'script_Error' --filter 'error'
+TG_LOG_RECIPIENTS_IDS=65746546345
+* 5 * * * python3 ~/script2.py | ~/tg_log.sh --tag 'script_Error' --filter 'error'
 ```
